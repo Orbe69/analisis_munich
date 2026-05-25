@@ -1,15 +1,23 @@
-# Análisis de alquileres en München
+# Munich Rental Market Analysis
 
-Análisis del precio medio de alquiler por barrio en München usando Python y pandas.
+Analysis of average rental prices by neighborhood in Munich using Python and machine learning.
 
 ## Dataset
-Ofertas de alquiler en Alemania de Kaggle (268.000 registros).
+Apartment rental offers in Germany from Kaggle (268,000 records).
 
-## Resultados
-Los barrios más caros son Altstadt y Lehel (~35€/m²).
-Los más asequibles son Lochhausen y Aubing (~17€/m²).
+## Results
+- Most expensive neighborhoods: Altstadt (~35€/m²) and Lehel (~30€/m²)
+- Most affordable: Lochhausen and Aubing (~17€/m²)
+- Prediction model MAE: 330€
 
-## Tecnologías
+## Technologies
 - Python
 - pandas
 - matplotlib
+- folium
+- scikit-learn
+
+## Usage
+1. Download the dataset from Kaggle: [link]
+2. Place `immo_data.csv` in the project folder
+3. Run `python analisis.py`
