@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ce09a2a870e7e925bc9cf8dd42334cdd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ce09a2a870e7e925bc9cf8dd42334cdd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ce09a2a870e7e925bc9cf8dd42334cdd = L.map(
+                "map_ce09a2a870e7e925bc9cf8dd42334cdd",
+                {
+                    center: [48.1351, 11.582],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4233fb5b7924cdfbec0e90c4bb45f98a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4233fb5b7924cdfbec0e90c4bb45f98a.addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+            var circle_marker_a242eb7fc94399024f89fa6a9cb76945 = L.circleMarker(
+                [48.1374, 11.5755],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.981416603629173, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_e5b6463fbae141b437aacc15c2652efd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e081f806a187ed46c4b2717462d7b79f = $(`<div id="html_e081f806a187ed46c4b2717462d7b79f" style="width: 100.0%; height: 100.0%;">Altstadt:  35.94 €/m2</div>`)[0];
+                popup_e5b6463fbae141b437aacc15c2652efd.setContent(html_e081f806a187ed46c4b2717462d7b79f);
+            
+        
+
+        circle_marker_a242eb7fc94399024f89fa6a9cb76945.bindPopup(popup_e5b6463fbae141b437aacc15c2652efd)
+        ;
+
+        
+    
+    
+            var circle_marker_9e4703656e4b86a96aeb290daf617331 = L.circleMarker(
+                [48.1341, 11.5912],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.194486439727223, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_0dff013ba149ccc0443173eb521b1c21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e953f1149b6d2031a7ecabcf2681f738 = $(`<div id="html_e953f1149b6d2031a7ecabcf2681f738" style="width: 100.0%; height: 100.0%;">Lehel:  30.58 €/m2</div>`)[0];
+                popup_0dff013ba149ccc0443173eb521b1c21.setContent(html_e953f1149b6d2031a7ecabcf2681f738);
+            
+        
+
+        circle_marker_9e4703656e4b86a96aeb290daf617331.bindPopup(popup_0dff013ba149ccc0443173eb521b1c21)
+        ;
+
+        
+    
+    
+            var circle_marker_e05e86bc1f60015e6543e27ad1ba5399 = L.circleMarker(
+                [48.128, 11.565],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.565155271846608, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_864876d7242d75f042ea1f42a8045d2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8499820e8ea84d5df4ebda9b29a6ac28 = $(`<div id="html_8499820e8ea84d5df4ebda9b29a6ac28" style="width: 100.0%; height: 100.0%;">Ludwigsvorstadt_Isarvorstadt:  28.70 €/m2</div>`)[0];
+                popup_864876d7242d75f042ea1f42a8045d2d.setContent(html_8499820e8ea84d5df4ebda9b29a6ac28);
+            
+        
+
+        circle_marker_e05e86bc1f60015e6543e27ad1ba5399.bindPopup(popup_864876d7242d75f042ea1f42a8045d2d)
+        ;
+
+        
+    
+    
+            var circle_marker_13dcae63dd7e2ee47a1ffab4d6cc02b2 = L.circleMarker(
+                [48.158, 11.565],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.073447730922238, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_236c9d4584802c860c0a2787db1d8a7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cea144365030839a75392193ec710a1a = $(`<div id="html_cea144365030839a75392193ec710a1a" style="width: 100.0%; height: 100.0%;">Schwabing_West:  27.22 €/m2</div>`)[0];
+                popup_236c9d4584802c860c0a2787db1d8a7d.setContent(html_cea144365030839a75392193ec710a1a);
+            
+        
+
+        circle_marker_13dcae63dd7e2ee47a1ffab4d6cc02b2.bindPopup(popup_236c9d4584802c860c0a2787db1d8a7d)
+        ;
+
+        
+    
+    
+            var circle_marker_10bd68aedae82313450a8f082f70c352 = L.circleMarker(
+                [48.1503, 11.568],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.051755561268967, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_21280ad01d8b92c2efffd4b4ae5f4ff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31d4ea213db85b6d170bfbf582528408 = $(`<div id="html_31d4ea213db85b6d170bfbf582528408" style="width: 100.0%; height: 100.0%;">Maxvorstadt:  27.16 €/m2</div>`)[0];
+                popup_21280ad01d8b92c2efffd4b4ae5f4ff5.setContent(html_31d4ea213db85b6d170bfbf582528408);
+            
+        
+
+        circle_marker_10bd68aedae82313450a8f082f70c352.bindPopup(popup_21280ad01d8b92c2efffd4b4ae5f4ff5)
+        ;
+
+        
+    
+    
+            var circle_marker_9f81d09bd789db98a9e91ee6e887410c = L.circleMarker(
+                [48.1642, 11.5836],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.021617988465954, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_7cf170dd38eec8e6babcb5e1c774c230 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4bca8107f7cd3d87e9e638108ae20ac = $(`<div id="html_e4bca8107f7cd3d87e9e638108ae20ac" style="width: 100.0%; height: 100.0%;">Schwabing:  27.06 €/m2</div>`)[0];
+                popup_7cf170dd38eec8e6babcb5e1c774c230.setContent(html_e4bca8107f7cd3d87e9e638108ae20ac);
+            
+        
+
+        circle_marker_9f81d09bd789db98a9e91ee6e887410c.bindPopup(popup_7cf170dd38eec8e6babcb5e1c774c230)
+        ;
+
+        
+    
+    
+            var circle_marker_7848ba0a19d6564cf405d6649c40a2dc = L.circleMarker(
+                [48.127, 11.605],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.921026716184736, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_34302e69d79e82dfb311b5b54ed97d64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a293dd3d83e97ac282ccca324af106c = $(`<div id="html_0a293dd3d83e97ac282ccca324af106c" style="width: 100.0%; height: 100.0%;">Haidhausen:  26.76 €/m2</div>`)[0];
+                popup_34302e69d79e82dfb311b5b54ed97d64.setContent(html_0a293dd3d83e97ac282ccca324af106c);
+            
+        
+
+        circle_marker_7848ba0a19d6564cf405d6649c40a2dc.bindPopup(popup_34302e69d79e82dfb311b5b54ed97d64)
+        ;
+
+        
+    
+    
+            var circle_marker_670bdef74475625b24c05ce98bf99568 = L.circleMarker(
+                [48.105, 11.568],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.657072723367493, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_787a257d558e095b847a17e1a427f1b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67152d41e01f1f1947aaccdd9a8102e8 = $(`<div id="html_67152d41e01f1f1947aaccdd9a8102e8" style="width: 100.0%; height: 100.0%;">Untergiesing:  25.97 €/m2</div>`)[0];
+                popup_787a257d558e095b847a17e1a427f1b3.setContent(html_67152d41e01f1f1947aaccdd9a8102e8);
+            
+        
+
+        circle_marker_670bdef74475625b24c05ce98bf99568.bindPopup(popup_787a257d558e095b847a17e1a427f1b3)
+        ;
+
+        
+    
+    
+            var circle_marker_0511c771635b054eca833831fe3878e9 = L.circleMarker(
+                [48.185, 11.568],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.300337159198337, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_3a1212ee220faaa3c17fa9f49e18a33c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21e59faec22e7f72655bf24b815c3d5d = $(`<div id="html_21e59faec22e7f72655bf24b815c3d5d" style="width: 100.0%; height: 100.0%;">Milbertshofen:  24.90 €/m2</div>`)[0];
+                popup_3a1212ee220faaa3c17fa9f49e18a33c.setContent(html_21e59faec22e7f72655bf24b815c3d5d);
+            
+        
+
+        circle_marker_0511c771635b054eca833831fe3878e9.bindPopup(popup_3a1212ee220faaa3c17fa9f49e18a33c)
+        ;
+
+        
+    
+    
+            var circle_marker_400bf3244705c659b2f24e08aad4c8d3 = L.circleMarker(
+                [48.155, 11.528],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.244538036896321, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_85cb14706d2f67becdf7ebef167d0128 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f14c063ca063ff998d717a91e906a98b = $(`<div id="html_f14c063ca063ff998d717a91e906a98b" style="width: 100.0%; height: 100.0%;">Neuhausen:  24.73 €/m2</div>`)[0];
+                popup_85cb14706d2f67becdf7ebef167d0128.setContent(html_f14c063ca063ff998d717a91e906a98b);
+            
+        
+
+        circle_marker_400bf3244705c659b2f24e08aad4c8d3.bindPopup(popup_85cb14706d2f67becdf7ebef167d0128)
+        ;
+
+        
+    
+    
+            var circle_marker_e700f50107a2f379419404b1621d2820 = L.circleMarker(
+                [48.095, 11.548],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.820024425327375, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_9908cd0a91c45cf2a7b72f0a8258aa96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b64dcf994e92174b090e82634d084b2 = $(`<div id="html_3b64dcf994e92174b090e82634d084b2" style="width: 100.0%; height: 100.0%;">Thalkirchen:  23.46 €/m2</div>`)[0];
+                popup_9908cd0a91c45cf2a7b72f0a8258aa96.setContent(html_3b64dcf994e92174b090e82634d084b2);
+            
+        
+
+        circle_marker_e700f50107a2f379419404b1621d2820.bindPopup(popup_9908cd0a91c45cf2a7b72f0a8258aa96)
+        ;
+
+        
+    
+    
+            var circle_marker_1e8921803aacefa6b689866664b236e0 = L.circleMarker(
+                [48.158, 11.505],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.809205510019585, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_36a0f188a50cb1957acddad9895d1d73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb11e12bd4659e217c8ca29f221cc768 = $(`<div id="html_fb11e12bd4659e217c8ca29f221cc768" style="width: 100.0%; height: 100.0%;">Nymphenburg:  23.43 €/m2</div>`)[0];
+                popup_36a0f188a50cb1957acddad9895d1d73.setContent(html_fb11e12bd4659e217c8ca29f221cc768);
+            
+        
+
+        circle_marker_1e8921803aacefa6b689866664b236e0.bindPopup(popup_36a0f188a50cb1957acddad9895d1d73)
+        ;
+
+        
+    
+    
+            var circle_marker_e6348ca3f86420236b4cf6e9371cdf91 = L.circleMarker(
+                [48.115, 11.545],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.784286263032165, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_ca08ede54c65f09e34a41e4e1f04460a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2d89476a08382dfcaeb0ca4265c6fd9 = $(`<div id="html_f2d89476a08382dfcaeb0ca4265c6fd9" style="width: 100.0%; height: 100.0%;">Sendling:  23.35 €/m2</div>`)[0];
+                popup_ca08ede54c65f09e34a41e4e1f04460a.setContent(html_f2d89476a08382dfcaeb0ca4265c6fd9);
+            
+        
+
+        circle_marker_e6348ca3f86420236b4cf6e9371cdf91.bindPopup(popup_ca08ede54c65f09e34a41e4e1f04460a)
+        ;
+
+        
+    
+    
+            var circle_marker_9185691b5344a88b599a86edea197ef4 = L.circleMarker(
+                [48.145, 11.618],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.777837153046659, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_11e1033d485e6daa2863dd21f7f32205 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a1cf63892dff61854eda725f4a211f0 = $(`<div id="html_9a1cf63892dff61854eda725f4a211f0" style="width: 100.0%; height: 100.0%;">Bogenhausen:  23.33 €/m2</div>`)[0];
+                popup_11e1033d485e6daa2863dd21f7f32205.setContent(html_9a1cf63892dff61854eda725f4a211f0);
+            
+        
+
+        circle_marker_9185691b5344a88b599a86edea197ef4.bindPopup(popup_11e1033d485e6daa2863dd21f7f32205)
+        ;
+
+        
+    
+    
+            var circle_marker_bda01b4f4ba95f415b5b308d5f1d2e0b = L.circleMarker(
+                [48.138, 11.505],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.194025723212384, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_b13abd2d377911f19a1539188c8be401 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e417fec79a8fa1318c1a4a55971c7703 = $(`<div id="html_e417fec79a8fa1318c1a4a55971c7703" style="width: 100.0%; height: 100.0%;">Laim:  21.58 €/m2</div>`)[0];
+                popup_b13abd2d377911f19a1539188c8be401.setContent(html_e417fec79a8fa1318c1a4a55971c7703);
+            
+        
+
+        circle_marker_bda01b4f4ba95f415b5b308d5f1d2e0b.bindPopup(popup_b13abd2d377911f19a1539188c8be401)
+        ;
+
+        
+    
+    
+            var circle_marker_877c54868905352c0a44055a2fcddcbf = L.circleMarker(
+                [48.178, 11.518],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.005829398096714, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_5dbc5054ccde64b31c4e1c2f7cc0e1c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a580d60fec69aaddce0df97564dbba06 = $(`<div id="html_a580d60fec69aaddce0df97564dbba06" style="width: 100.0%; height: 100.0%;">Moosach:  21.02 €/m2</div>`)[0];
+                popup_5dbc5054ccde64b31c4e1c2f7cc0e1c9.setContent(html_a580d60fec69aaddce0df97564dbba06);
+            
+        
+
+        circle_marker_877c54868905352c0a44055a2fcddcbf.bindPopup(popup_5dbc5054ccde64b31c4e1c2f7cc0e1c9)
+        ;
+
+        
+    
+    
+            var circle_marker_5afaa88e215f9694f2c0c4274cc35c81 = L.circleMarker(
+                [48.148, 11.462],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.995994922973538, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_db68d1d75b4ae79b50c1c22280ef04bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e712cd2a0aff3f43d91fbafd3b2d467 = $(`<div id="html_1e712cd2a0aff3f43d91fbafd3b2d467" style="width: 100.0%; height: 100.0%;">Pasing:  20.99 €/m2</div>`)[0];
+                popup_db68d1d75b4ae79b50c1c22280ef04bf.setContent(html_1e712cd2a0aff3f43d91fbafd3b2d467);
+            
+        
+
+        circle_marker_5afaa88e215f9694f2c0c4274cc35c81.bindPopup(popup_db68d1d75b4ae79b50c1c22280ef04bf)
+        ;
+
+        
+    
+    
+            var circle_marker_eb6c45d428b26e12e75886b63f6eb149 = L.circleMarker(
+                [48.105, 11.485],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.198446801280677, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_7951e25ddb4d2c08a5e3ce8ec0637e96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ee16d3638e77cac9d96edb23120496b = $(`<div id="html_4ee16d3638e77cac9d96edb23120496b" style="width: 100.0%; height: 100.0%;">Hadern:  18.60 €/m2</div>`)[0];
+                popup_7951e25ddb4d2c08a5e3ce8ec0637e96.setContent(html_4ee16d3638e77cac9d96edb23120496b);
+            
+        
+
+        circle_marker_eb6c45d428b26e12e75886b63f6eb149.bindPopup(popup_7951e25ddb4d2c08a5e3ce8ec0637e96)
+        ;
+
+        
+    
+    
+            var circle_marker_5797f3c9d36aafd348974d6cb0cab4b3 = L.circleMarker(
+                [48.158, 11.435],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.918658228918012, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_1f8ba49a4277b43dcd0de020499dca4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_793aa1a3d845b11157218be2afbc8786 = $(`<div id="html_793aa1a3d845b11157218be2afbc8786" style="width: 100.0%; height: 100.0%;">Aubing:  17.76 €/m2</div>`)[0];
+                popup_1f8ba49a4277b43dcd0de020499dca4b.setContent(html_793aa1a3d845b11157218be2afbc8786);
+            
+        
+
+        circle_marker_5797f3c9d36aafd348974d6cb0cab4b3.bindPopup(popup_1f8ba49a4277b43dcd0de020499dca4b)
+        ;
+
+        
+    
+    
+            var circle_marker_fc1331b5ac685fd8a14d75cdba7f2ee6 = L.circleMarker(
+                [48.168, 11.418],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.731368494756315, "stroke": true, "weight": 3}
+            ).addTo(map_ce09a2a870e7e925bc9cf8dd42334cdd);
+        
+    
+        var popup_a2cd25fc0eeae358735c310759489659 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e1b1fa3bc4f328b98f399d3d02b0a08 = $(`<div id="html_2e1b1fa3bc4f328b98f399d3d02b0a08" style="width: 100.0%; height: 100.0%;">Lochhausen:  17.19 €/m2</div>`)[0];
+                popup_a2cd25fc0eeae358735c310759489659.setContent(html_2e1b1fa3bc4f328b98f399d3d02b0a08);
+            
+        
+
+        circle_marker_fc1331b5ac685fd8a14d75cdba7f2ee6.bindPopup(popup_a2cd25fc0eeae358735c310759489659)
+        ;
+
+        
+    
+</script>
+</html>
