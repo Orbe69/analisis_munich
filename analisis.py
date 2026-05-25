@@ -3,11 +3,49 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('immo_data.csv')
 
+
 munich = df[df['regio2'] == 'München']
 munich = munich[['totalRent', 'baseRent', 'livingSpace', 'noRooms', 'regio3']]
 
+print(munich.isnull().sum())
+
+munich = munich[munich['livingSpace'] > 10]
+munich = munich[munich['livingSpace'] < 300]
+munich = munich[munich['baseRent'] > 100]
+munich = munich[munich['baseRent'] < 10000]
+
+print(f"Pisos después de limpiar: {len(munich)}")
+
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error
+import numpy as np
+
+# Preparar features
 munich['precio_m2'] = munich['baseRent'] / munich['livingSpace']
 por_barrio = munich.groupby('regio3')['precio_m2'].mean().sort_values(ascending = False)
+munich = pd.get_dummies(munich, columns=['regio3'])
+barrio_cols = [col for col in munich.columns if col.startswith('regio3_')]
+X = munich[['livingSpace', 'noRooms'] + barrio_cols]
+y = munich['baseRent']
+
+# Dividir en train y test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+print(f"Datos de entrenamiento: {len(X_train)}")
+print(f"Datos de test: {len(X_test)}")
+
+# Entrenar el modelo
+modelo = LinearRegression()
+modelo.fit(X_train, y_train)
+
+# Predecir en test
+y_pred = modelo.predict(X_test)
+
+# Evaluar
+error = mean_absolute_error(y_test, y_pred)
+print(f"Error medio absoluto: {error:.2f} €")
+
 
 por_barrio.plot(kind = 'bar', figsize = (14, 6), color = 'steelblue')
 plt.title('Precio medio por m2 por barrio en München')
@@ -58,6 +96,20 @@ for barrio, precio in por_barrio.items():
 
 mapa.save('mapa_munich.html')
 print("Mapa guardado")
+
+# Predecir precio de un piso concreto
+piso = pd.DataFrame({
+    'livingSpace': [60],
+    'noRooms': [2]
+})
+
+for col in barrio_cols:
+    piso[col] = 0
+
+piso['regio3_Pasing'] = 1
+
+precio_predicho = modelo.predict(piso)
+print(f"Precio predicho para 80m², 3 habitaciones en Schwabing: {precio_predicho[0]:.2f} €")
 
 
 
